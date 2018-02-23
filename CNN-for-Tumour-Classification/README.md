@@ -1,4 +1,4 @@
-## Data Preparation
+### Data Preparation
 The data consists of many 2D "slices" which when combined produce a 3-dimensional rendering of whatever was scanned. In this case, that's the chest cavity of the patient. 
 
 The database consisting of CT scans of 1400 patients which is in the DICOM format was obtained from LIDC-IDRI (https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI) , and then there is another file that contains the labels for this data. CT scans of 1200 patients is used for training and the remaining for testing. 
@@ -37,7 +37,7 @@ $ pip install scikit-image
 
 The data preparation code outputs a numpy array containing the 3-d image along with its label for all the patients 
 
-# Running the Convolutional Neural Network
+## Running the Convolutional Neural Network
 
 The network.py code requires Tensorflow library dependencies. This can be installed using the instructions provided in https://www.tensorflow.org/install/
 The numpy array is fed as the input to the CNN. The CNN contains two convolution layers immediately after the input layer, followed by a pooling layer, a dropout layer and a fully connected layer. Each convolution layer is in turn followed by a rectified linear output layer and the pooling layer is followed by a Dropout layer.
