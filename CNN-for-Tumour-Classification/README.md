@@ -24,7 +24,7 @@ $ sudo apt-get install python-pip python-dev build-essential
 $ sudo pip install --upgrade pip 
 $ sudo pip install --upgrade virtualenv 
 ```
-* Installing dependencies 
+** Installing dependencies 
 ```
 $ pip install numpy
 $ pip install pandas
